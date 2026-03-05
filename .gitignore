@@ -1,0 +1,18 @@
+# Claude session data
+.claude/
+
+# Sensitive / server files
+ssh-config
+gnanajyothi_key.pub
+upload-all.bat
+upload-ftp.bat
+upload-to-server.bat
+upload.ps1
+
+# Junk
+null
+null.txt
+
+# PHP server utilities (not needed in repo)
+fix-forms.php
+fix-htaccess.php
