@@ -63,13 +63,12 @@
                 <li><a href="blog.html"><i class="fas fa-pencil-alt"></i> Blog</a></li>
             </ul>
         </nav>
-        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
     </div>
 </header>
 
-<nav class="mobile-nav" id="mobileNav">
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
     <div class="mobile-nav-header">
         <img src="logo.webp" alt="Logo" width="45" height="45">
         <span>Gnanajyothi School</span>
@@ -308,15 +307,11 @@
 </a>
 
 <script>
-var menuToggle = document.getElementById('menuToggle');
-var mobileNav = document.getElementById('mobileNav');
-if(menuToggle) {
-    menuToggle.addEventListener('click', function() {
-        var open = mobileNav.classList.toggle('open');
-        menuToggle.setAttribute('aria-expanded', open);
-        menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    });
-}
+const menuToggle=document.getElementById('menuToggle');const mobileNav=document.getElementById('mobileNav');const mobileOverlay=document.getElementById('mobileOverlay');
+function openMenu(){mobileNav.classList.add('active');mobileOverlay.classList.add('active');menuToggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+function closeMenu(){mobileNav.classList.remove('active');mobileOverlay.classList.remove('active');menuToggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+menuToggle.addEventListener('click',()=>mobileNav.classList.contains('active')?closeMenu():openMenu());
+mobileOverlay.addEventListener('click',closeMenu);
 </script>
 </body>
 </html>

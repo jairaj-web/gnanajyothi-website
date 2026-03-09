@@ -6,6 +6,76 @@
       "sourceType": "github",
       "computedHash": "0dfe8e2dedc037971bc817fb169c2c1175776b51fd1403f5cd43a8662806ae50"
     },
+    "blog": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "8e338568c656c26d72efc0d8f19d961f53e39ed4802d1a49344244acd16b29fd"
+    },
+    "blog-analyze": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "ffd7eed7695fa0b1bfda480aa76469e9ab4bbe705f2a6a6d95dbc5c144fdb261"
+    },
+    "blog-audit": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "07e6d25c6c54fd7850b1b5ef92c937addb0bf27189a5c2194e667c51b1e69f8d"
+    },
+    "blog-brief": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "a7990d5363daec7116451cf3059282f9f50039a3ba3cf051020a56ddf7083ad9"
+    },
+    "blog-calendar": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "c6fb3fb064188bb98cfabcc2c9733ac8a431fefed1e98c7b7fd7cdf325b83ebf"
+    },
+    "blog-chart": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "c110655cf7844e6799ef74503fb140ea120819a0f7de3891bc8f18a79fa03007"
+    },
+    "blog-geo": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "f26bb7a739e21792db239244bc8a0fa7abc1a970755829d034c58d6ca764bdd8"
+    },
+    "blog-outline": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "9ca54fd320bda6e49f25c7dac0c280780df263de6f729487a20f80ad56ca5bdb"
+    },
+    "blog-repurpose": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "463f75ebbf0508fccb5dc8ec5a1bd272872ab4fd4187d1928743ca982fe5bfea"
+    },
+    "blog-rewrite": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "b59d1ef59dc02f682168d1b452ea6d76b1ab359c386ce354769dd1e531f04c83"
+    },
+    "blog-schema": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "83c34ed5c2acea616f221570a9e1f6d127a370a6b0c90f6add38226692ad8044"
+    },
+    "blog-seo-check": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "d1343ccbaaa6af4b5286a8f5930905f8353d255bb6b66cbc7bf696e19e64c368"
+    },
+    "blog-strategy": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "4f7d87609c47c397af108f18adfc8c20d4dd685b8189f6bde734b18f930e0889"
+    },
+    "blog-write": {
+      "source": "AgriciDaniel/claude-blog",
+      "sourceType": "github",
+      "computedHash": "6aacac02e66dafaa7d69ca0e7cca1eebbcfc4b74ed4742da0baf879a4aff526a"
+    },
     "competitor-analysis": {
       "source": "aaron-he-zhu/seo-geo-claude-skills",
       "sourceType": "github",
