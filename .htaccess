@@ -1,5 +1,8 @@
 # Sri Gnanajyothi School — .htaccess
 
+# Serve index.html as the default homepage
+DirectoryIndex index.html index.php
+
 # Security Headers
 <IfModule mod_headers.c>
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
@@ -17,15 +20,12 @@
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Remove trailing slash from URLs and rewrite to .html
+    # Remove trailing slash and add .html extension
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.+)/$ /$1 [R=301,L]
-
-    # Rewrite directory-like requests to .html files
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
+    RewriteCond %{REQUEST_URI} !^/wp-
+    RewriteCond %{REQUEST_URI} !^/index\.html
+    RewriteRule ^(.+?)/?$ /$1.html [L]
 </IfModule>
 
 # Cache Control for static assets (Header set overrides server defaults)
