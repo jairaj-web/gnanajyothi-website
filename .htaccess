@@ -1,8 +1,23 @@
 # Sri Gnanajyothi School — .htaccess
 
-# Force serve index.html at root, bypass WordPress
+# URL Rewriting & Redirects
 <IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect /index and /index.html to root (must be first)
+    RewriteRule ^index(\.html)?/?$ / [R=301,L]
+
+    # Redirect .html requests to clean URLs (301 permanent)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+    # Force serve index.html at root
     RewriteRule ^$ index.html [L]
+
+    # Rewrite clean URLs to .html files (internal rewrite)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+?)/?$ $1.html [L]
 </IfModule>
 
 # Serve index.html as default homepage
@@ -17,14 +32,6 @@ DirectoryIndex index.html index.php
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     Header unset X-Powered-By
-</IfModule>
-
-# Rewrite URLs to .html files
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.+?)/?$ $1.html [L]
 </IfModule>
 
 # Cache Control for static assets (Header set overrides server defaults)
