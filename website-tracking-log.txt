@@ -1,0 +1,48 @@
+
+=====================================================
+DAILY CHECK — 2026-03-07 19:26
+=====================================================
+
+[ PAGE STATUS ]
+  ✅ 200 — /
+  ✅ 200 — /about.html
+  ✅ 200 — /programs.html
+  ✅ 200 — /facilities.html
+  ✅ 200 — /fees.html
+  ✅ 200 — /gallery.html
+  ✅ 200 — /contact.html
+  ✅ 200 — /blog.html
+  ✅ 200 — /best-schools-yelahanka.html
+  ✅ 200 — /lkg-admission-yelahanka-2026.html
+  ✅ 200 — /ukg-admission-yelahanka-2026.html
+  ✅ 200 — /pre-kg-admission-yelahanka-2026.html
+  ✅ 200 — /class-1-admission-age-karnataka-2026.html
+  ✅ 200 — /rte-admission-karnataka-2026.html
+  ✅ 200 — /school-fees-yelahanka-2026.html
+  ✅ 200 — /kseeb-vs-cbse.html
+  ✅ 200 — /karnataka-school-holiday-list-2026.html
+  ✅ 200 — /school-admission-documents-bangalore.html
+  ✅ 200 — /state-board-schools-yelahanka.html
+  ✅ 200 — /school-near-yelahanka-new-town.html
+  ✅ 200 — /class-6-7-admission-yelahanka-2026.html
+  ✅ 200 — /after-school-activities-yelahanka.html
+  ✅ 200 — /school-transfer-karnataka.html
+  ✅ 200 — /sitemap.xml
+  ✅ 200 — /robots.txt
+
+  RESULT: 25 OK / 0 FAILED
+
+[ RESPONSE TIME — Homepage ]
+  Homepage load time: 0.149215s
+
+[ SECURITY HEADERS ]
+  Cache-Control: no-store, no-cache, must-revalidate
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+
+[ SITEMAP ]
+  Sitemap HTTP status: 200
+  URLs in sitemap: 23
+
+[ DONE — See full log at website-tracking-log.txt ]

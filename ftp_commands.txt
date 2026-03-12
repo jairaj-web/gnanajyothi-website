@@ -1,0 +1,12 @@
+open 145.79.209.172 65002  
+u202368585  
+Gana@000  
+binary  
+cd public_html  
+put index.html  
+put about.html  
+put facilities.html  
+put programs.html  
+put contact.html  
+put whatsapp.js  
+bye 

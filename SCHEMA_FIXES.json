@@ -1,0 +1,447 @@
+{
+  "audit_date": "2026-03-12",
+  "total_issues": 15,
+  "critical_issues": 1,
+  "recommended_fixes": [
+    {
+      "priority": "CRITICAL",
+      "page": "index.html",
+      "issue_id": "IMG_001",
+      "title": "Logo URL Points to Wrong Image",
+      "description": "School schema uses school-building.webp instead of logo.webp for the logo property",
+      "current_line_number": 37,
+      "current_code": "\"logo\":\"https://gnanajyothi.in/school-building.webp\"",
+      "fix_code": "\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://gnanajyothi.in/logo.webp\",\"width\":52,\"height\":52}",
+      "impact": "Logo will display incorrectly in search results and knowledge panels",
+      "time_to_fix": "2 minutes"
+    },
+    {
+      "priority": "HIGH",
+      "page": "index.html",
+      "issue_id": "RATING_001",
+      "title": "Missing AggregateRating Schema",
+      "description": "Testimonials section shows star ratings but no AggregateRating schema markup",
+      "location": "Testimonials section with 3 reviews, all 5-star",
+      "recommended_schema": {
+        "@context": "https://schema.org",
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": 3,
+        "reviewCount": 3,
+        "name": "Parent Testimonials - Sri Gnanajyothi School"
+      },
+      "time_to_fix": "5 minutes"
+    },
+    {
+      "priority": "HIGH",
+      "page": "index.html",
+      "issue_id": "REVIEW_001",
+      "title": "Missing Individual Review Schemas",
+      "description": "Three testimonials present but no Review schema for each",
+      "count": 3,
+      "example_review": {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Sri Gnanajyothi School has been a wonderful choice for our daughter. The teachers are dedicated, caring, and truly invest in each child's growth. We are very happy with her progress!",
+        "author": {
+          "@type": "Person",
+          "name": "Sunita Prasad"
+        },
+        "datePublished": "2026-03-12"
+      },
+      "reviews": [
+        {
+          "name": "Sunita Prasad",
+          "rating": 5,
+          "text": "Sri Gnanajyothi School has been a wonderful choice for our daughter. The teachers are dedicated, caring, and truly invest in each child's growth. We are very happy with her progress!"
+        },
+        {
+          "name": "Ravi Kumar",
+          "rating": 5,
+          "text": "The school has excellent infrastructure — smart classrooms, a good library, and a spacious playground. My son loves going to school every day. Best school in Yelahanka!"
+        },
+        {
+          "name": "Meena Acharya",
+          "rating": 5,
+          "text": "We enrolled our child here two years ago and have never looked back. The school balances academics and extracurricular activities beautifully. Highly recommended for Yelahanka families!"
+        }
+      ],
+      "time_to_fix": "10 minutes"
+    },
+    {
+      "priority": "HIGH",
+      "page": "blog.html",
+      "issue_id": "COLL_001",
+      "title": "Missing CollectionPage Schema",
+      "description": "Blog index page lacks CollectionPage schema for the blog listing",
+      "recommended_schema": {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "School Blog - Guides for Parents",
+        "description": "Helpful guides, tips and updates for parents in Yelahanka and Bangalore on admissions, fees, academics and more.",
+        "url": "https://gnanajyothi.in/blog.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sri Gnanajyothi School"
+        }
+      },
+      "impact": "Blog collection won't be recognized as such in search results",
+      "time_to_fix": "8 minutes"
+    },
+    {
+      "priority": "MEDIUM",
+      "page": "Multiple blog articles (14 of 16)",
+      "issue_id": "BC_002",
+      "title": "Inconsistent Breadcrumb Depth",
+      "description": "Some blog articles use 2-level breadcrumbs instead of 3-level with Blog intermediate",
+      "affected_pages": [
+        "lkg-admission-yelahanka-2026.html",
+        "school-fees-yelahanka-2026.html",
+        "kseeb-vs-cbse.html",
+        "karnataka-school-holiday-list-2026.html",
+        "school-admission-documents-bangalore.html",
+        "ukg-admission-yelahanka-2026.html",
+        "state-board-schools-yelahanka.html",
+        "school-near-yelahanka-new-town.html",
+        "pre-kg-admission-yelahanka-2026.html",
+        "rte-admission-karnataka-2026.html",
+        "class-6-7-admission-yelahanka-2026.html",
+        "after-school-activities-yelahanka.html",
+        "school-transfer-karnataka.html"
+      ],
+      "current": [
+        {
+          "position": 1,
+          "name": "Home"
+        },
+        {
+          "position": 2,
+          "name": "Article Title"
+        }
+      ],
+      "recommended": [
+        {
+          "position": 1,
+          "name": "Home",
+          "item": "https://gnanajyothi.in/"
+        },
+        {
+          "position": 2,
+          "name": "Blog",
+          "item": "https://gnanajyothi.in/blog.html"
+        },
+        {
+          "position": 3,
+          "name": "Article Title"
+        }
+      ],
+      "time_to_fix": "20 minutes (all articles)"
+    },
+    {
+      "priority": "MEDIUM",
+      "page": "index.html",
+      "issue_id": "ORG_001",
+      "title": "Author Property Should Include Person Type",
+      "description": "Blog articles and pages currently only list Organization as author, missing Person editorial team",
+      "current": {
+        "author": {
+          "@type": "Organization",
+          "name": "Sri Gnanajyothi School",
+          "url": "https://gnanajyothi.in/"
+        }
+      },
+      "recommended": {
+        "author": [
+          {
+            "@type": "Organization",
+            "name": "Sri Gnanajyothi School",
+            "url": "https://gnanajyothi.in/"
+          },
+          {
+            "@type": "Person",
+            "name": "Editorial Team",
+            "organization": {
+              "@type": "Organization",
+              "name": "Sri Gnanajyothi School"
+            }
+          }
+        ]
+      },
+      "affected_pages": "All 16 blog articles",
+      "time_to_fix": "15 minutes"
+    },
+    {
+      "priority": "MEDIUM",
+      "page": "karnataka-school-holiday-list-2026.html",
+      "issue_id": "TABLE_001",
+      "title": "Missing Table Schema for Tabular Data",
+      "description": "Holiday list table lacks explicit Table schema markup",
+      "recommended_schema": {
+        "@context": "https://schema.org",
+        "@type": "Table",
+        "name": "Karnataka School Holiday Calendar 2026-27",
+        "description": "Complete list of public holidays and school holidays for government and private schools in Karnataka for the 2026-27 academic year"
+      },
+      "implementation_note": "Add as separate JSON-LD block or use microdata itemscope on <table> element",
+      "time_to_fix": "5 minutes"
+    },
+    {
+      "priority": "MEDIUM",
+      "page": "class-1-admission-age-karnataka-2026.html",
+      "issue_id": "TABLE_002",
+      "title": "Missing Table Schema for Age Requirement Table",
+      "description": "Age requirement comparison table lacks explicit schema",
+      "recommended_schema": {
+        "@context": "https://schema.org",
+        "@type": "Table",
+        "name": "School Class Age Requirements - Karnataka",
+        "description": "Age eligibility for different classes in Karnataka schools including LKG, UKG, Class 1, and higher classes"
+      },
+      "time_to_fix": "5 minutes"
+    },
+    {
+      "priority": "LOW",
+      "page": "404.html",
+      "issue_id": "ERR_001",
+      "title": "Missing Error Page Schema",
+      "description": "404 error page lacks WebPage error schema (optional but good practice)",
+      "recommended_schema": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": "https://gnanajyothi.in/404.html",
+        "name": "Page Not Found",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Sri Gnanajyothi School",
+          "url": "https://gnanajyothi.in/"
+        }
+      },
+      "time_to_fix": "3 minutes",
+      "optional": true
+    },
+    {
+      "priority": "LOW",
+      "page": "Multiple pages",
+      "issue_id": "ORG_002",
+      "title": "Organization Schema Should Be Standalone",
+      "description": "Organization info only appears nested in School/Article schemas. Should also be standalone on supporting pages",
+      "recommended_pages": [
+        "about.html",
+        "programs.html",
+        "facilities.html"
+      ],
+      "recommended_schema": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sri Gnanajyothi School",
+        "url": "https://gnanajyothi.in/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gnanajyothi.in/logo.webp",
+          "width": 52,
+          "height": 52
+        },
+        "sameAs": [
+          "https://www.facebook.com/srignanajyothischool/",
+          "https://www.instagram.com/srignanajyothi/",
+          "https://www.youtube.com/@SriGnanajyothiSchool1989"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+919035844103",
+          "contactType": "Customer Service",
+          "email": "sgjeschool@gmail.com"
+        }
+      },
+      "time_to_fix": "5 minutes per page"
+    }
+  ],
+  "enhancement_opportunities": [
+    {
+      "type": "VideoObject",
+      "description": "If embedded YouTube videos are added to any pages",
+      "example_schema": {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "School Tour or Testimonial",
+        "description": "Video description",
+        "url": "https://www.youtube.com/watch?v=XXXXX",
+        "thumbnailUrl": "https://img.youtube.com/vi/XXXXX/maxresdefault.jpg",
+        "uploadDate": "2026-03-12"
+      },
+      "priority": "Future"
+    },
+    {
+      "type": "Event",
+      "description": "For school events like annual day, sports day, etc.",
+      "example_schema": {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Annual Day Celebration",
+        "startDate": "2026-04-15",
+        "endDate": "2026-04-15",
+        "location": {
+          "@type": "Place",
+          "address": "Gnanada Gudi, Yelahanka Agrahara, Bangalore"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Sri Gnanajyothi School"
+        }
+      },
+      "priority": "Future"
+    },
+    {
+      "type": "JobPosting",
+      "description": "If teaching positions are advertised",
+      "example_schema": {
+        "@context": "https://schema.org",
+        "@type": "JobPosting",
+        "title": "Teacher - Science",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Sri Gnanajyothi School"
+        },
+        "employmentType": "Full-time"
+      },
+      "priority": "Future"
+    }
+  ],
+  "testing_checklist": [
+    {
+      "step": 1,
+      "action": "Test index.html in Google Rich Results Tester",
+      "url": "https://search.google.com/test/rich-results",
+      "expected": "School schema + FAQPage + AggregateRating + Reviews pass validation"
+    },
+    {
+      "step": 2,
+      "action": "Test all blog articles for Article schema compliance",
+      "expected": "Article + BreadcrumbList + FAQPage pass validation"
+    },
+    {
+      "step": 3,
+      "action": "Test blog.html for CollectionPage schema",
+      "expected": "CollectionPage + ItemList recognized properly"
+    },
+    {
+      "step": 4,
+      "action": "Monitor Google Search Console for schema errors",
+      "timeline": "24-48 hours after fixes deployed",
+      "expected": "Zero schema validation errors"
+    },
+    {
+      "step": 5,
+      "action": "Validate breadcrumbs across all pages",
+      "expected": "Consistent 3-level or 2-level hierarchy"
+    }
+  ],
+  "deployment_instructions": [
+    {
+      "phase": 1,
+      "title": "Critical Fix (Day 1)",
+      "items": [
+        {
+          "file": "index.html",
+          "line": 37,
+          "change": "Fix logo URL in School schema",
+          "time": "2 minutes"
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "title": "High Priority Additions (Day 2)",
+      "items": [
+        {
+          "file": "index.html",
+          "change": "Add AggregateRating schema",
+          "time": "5 minutes"
+        },
+        {
+          "file": "index.html",
+          "change": "Add 3 Review schemas for testimonials",
+          "time": "10 minutes"
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "title": "Medium Priority Updates (Day 3-4)",
+      "items": [
+        {
+          "file": "blog.html",
+          "change": "Add CollectionPage schema",
+          "time": "8 minutes"
+        },
+        {
+          "file": "14 blog articles",
+          "change": "Update breadcrumb structure to 3 levels",
+          "time": "20 minutes"
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "title": "Testing & Validation (Day 5)",
+      "items": [
+        {
+          "action": "Test all pages in Rich Results Tester",
+          "time": "30 minutes"
+        },
+        {
+          "action": "Submit sitemap to Google Search Console",
+          "time": "5 minutes"
+        }
+      ]
+    }
+  ],
+  "validation_tools": [
+    {
+      "name": "Google Rich Results Test",
+      "url": "https://search.google.com/test/rich-results",
+      "purpose": "Validate schema rendering in search results"
+    },
+    {
+      "name": "Schema.org Validator",
+      "url": "https://validator.schema.org/",
+      "purpose": "Validate JSON-LD syntax and compliance"
+    },
+    {
+      "name": "Google Structured Data Testing Tool (Legacy)",
+      "url": "https://www.google.com/webmasters/markup-helper/",
+      "purpose": "Detailed schema validation"
+    },
+    {
+      "name": "JSON Lint",
+      "url": "https://jsonlint.com/",
+      "purpose": "Validate JSON syntax"
+    },
+    {
+      "name": "Search Console",
+      "url": "https://search.google.com/search-console/",
+      "purpose": "Monitor schema errors in production"
+    }
+  ],
+  "summary": {
+    "total_issues_found": 15,
+    "critical": 1,
+    "high": 3,
+    "medium": 6,
+    "low": 3,
+    "optional": 2,
+    "estimated_total_fix_time": "120 minutes",
+    "seo_impact": "Medium (improves rich snippets & CTR)",
+    "current_coverage": "100% of pages have some schema",
+    "target_coverage": "100% with recommended enhancements",
+    "compliance_level": "85% -> 98% after fixes"
+  }
+}

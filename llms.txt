@@ -1,42 +1,148 @@
-# Sri Gnanajyothi School — llms.txt
+# Sri Gnanajyothi School - AI Models Access File
 
-> Sri Gnanajyothi School is a Karnataka State Board (KSEEB) English medium school established in 1989, located in Yelahanka Agrahara, Bangalore. We offer education from Pre-KG (Nursery) to Class 10 with 37+ years of excellence. Admissions open for 2026-27.
+## Overview
+Sri Gnanajyothi School is a Karnataka State Board English medium school located in Yelahanka, Bangalore, established in 1989. We provide quality education for students from LKG to Class 10 with 37+ years of excellence.
 
-## About
-- Founded: 1989
-- Board: Karnataka State Board (KSEEB) — NEP 2020 aligned
-- Location: Gnanada Gudi, Gnanarathna Dr. D. A. Gowda Sir School Road, Yelahanka Agrahara Badavane, Bengaluru, Karnataka 560064
-- Phone: +91 90358 44103
-- Email: sgjeschool@gmail.com
-- Classes: Pre-KG (Nursery), LKG, UKG, Class 1 to Class 10
-- Medium: English
+## School Information
 
-## Key Pages
-- [Home](https://gnanajyothi.in/)
-- [About the School](https://gnanajyothi.in/about.html)
-- [Academic Programs](https://gnanajyothi.in/programs.html)
-- [School Facilities](https://gnanajyothi.in/facilities.html)
-- [Fee Structure 2026-27](https://gnanajyothi.in/fees.html)
-- [Contact & Admissions](https://gnanajyothi.in/contact.html)
-- [Photo Gallery](https://gnanajyothi.in/gallery.html)
-- [Blog & Guides](https://gnanajyothi.in/blog.html)
+**Name:** Sri Gnanajyothi School
+**Location:** Gnanada Gudi, Gnanarathna Dr. D. A. Gowda Sir School Road, Yelahanka Agrahara Badavane, Bengaluru – 560064, Karnataka, India
+**Established:** 1989
+**Website:** https://gnanajyothi.in/
+**Contact:** +91 90358 44103
+**Email:** sgjeschool@gmail.com
 
-## Parent Guides (Blog)
-- [Best Schools in Yelahanka Bangalore 2026](https://gnanajyothi.in/best-schools-yelahanka.html)
-- [LKG Admission in Yelahanka 2026-27](https://gnanajyothi.in/lkg-admission-yelahanka-2026.html)
-- [UKG Admission in Yelahanka 2026-27](https://gnanajyothi.in/ukg-admission-yelahanka-2026.html)
-- [Pre-KG & Nursery Admission in Yelahanka 2026-27](https://gnanajyothi.in/pre-kg-admission-yelahanka-2026.html)
-- [Class 1 Admission Age in Karnataka 2026-27](https://gnanajyothi.in/class-1-admission-age-karnataka-2026.html)
-- [RTE Admission Karnataka 2026-27](https://gnanajyothi.in/rte-admission-karnataka-2026.html)
-- [School Fees in Yelahanka 2026-27](https://gnanajyothi.in/school-fees-yelahanka-2026.html)
-- [Documents Required for School Admission Bangalore](https://gnanajyothi.in/school-admission-documents-bangalore.html)
-- [Karnataka School Holiday List 2026-27](https://gnanajyothi.in/karnataka-school-holiday-list-2026.html)
-- [KSEEB vs CBSE — Which Board is Best?](https://gnanajyothi.in/kseeb-vs-cbse.html)
-- [State Board Schools in Yelahanka](https://gnanajyothi.in/state-board-schools-yelahanka.html)
-- [Schools Near Yelahanka New Town](https://gnanajyothi.in/school-near-yelahanka-new-town.html)
+## Affiliation & Recognition
 
-## Facts
-- 5000+ alumni
-- 50+ faculty members
-- Facilities: Smart classrooms, science lab, computer lab, library, sports ground, art & music rooms
-- School hours: Mon–Fri 9:00 AM–4:00 PM, Sat 9:00 AM–1:00 PM
+- **Board:** Karnataka Secondary Education Examination Board (KSEEB)
+- **Medium:** English Medium
+- **Government Recognition:** Officially recognised by the Government of Karnataka
+- **Curriculum:** NEP 2020 Aligned (National Education Policy 2020)
+- **Classes:** LKG, UKG, Classes I-X
+
+## School Leadership
+
+- **Principal:** Mrs. Sumathi R. (25+ years in education)
+- **Academic Head:** Mr. Rajan K. (Curriculum development & academic excellence)
+- **Sports Director:** Mr. Venkat S. (Former state-level athlete)
+
+## Programs Offered
+
+1. **Pre-Primary:** LKG (Lower Kindergarten) & UKG (Upper Kindergarten)
+2. **Primary:** Classes I to V
+3. **Middle School:** Classes VI to VIII
+4. **Secondary:** Classes IX to X (SSLC Board Exam)
+
+## Academic Features
+
+- **English Medium Instruction** with Kannada and Hindi as second and third languages
+- **NEP 2020 Compliant Curriculum** emphasizing foundational literacy, experiential learning, and holistic development
+- **KSEEB Affiliation** ensuring standardized education and valid board exams
+- **Holistic Development** combining academics with sports, arts, values, and life skills
+
+## Facilities
+
+- Modern Classrooms with adequate lighting and ventilation
+- Science Lab equipped with modern equipment
+- Computer Lab with internet connectivity
+- Library with comprehensive collection of books and reference materials
+- Playground for sports and physical activities
+- Multipurpose Hall for assemblies and events
+- Drinking water and hygiene facilities
+
+## School Hours
+
+- **Weekdays (Monday-Friday):** 9:00 AM to 4:00 PM
+- **Saturday:** 9:00 AM to 1:00 PM
+- **Holidays:** Sundays and public holidays
+
+## Admissions Information
+
+**Current Status:** Admissions open for 2026-27 academic year
+
+**Eligibility:**
+- LKG: Children aged 3-4 years
+- UKG: Children aged 4-5 years
+- Class I onwards: As per age criteria and previous school records
+- Classes VI-X: As per merit and seat availability
+
+**Required Documents:**
+- Child's birth certificate
+- Aadhaar card (child and parent)
+- Transfer certificate (for Class I onwards)
+- Immunization records
+- Address proof
+- Passport photographs
+
+**Application Process:**
+1. Contact the school for prospectus and application form
+2. Submit completed form with required documents
+3. Attend entrance test (for higher classes)
+4. Parent-principal interaction
+5. Admission confirmation
+
+## Campus Location
+
+Located in Yelahanka Agrahara, one of Bangalore's established residential areas known for educational institutions. The school is easily accessible by public transport and has parking facilities for parent vehicles.
+
+## About the Region
+
+**Yelahanka** is a prominent locality in North Bangalore with:
+- Good residential and educational infrastructure
+- Proximity to commercial hubs
+- Well-connected by BMTC buses
+- Multiple schools and colleges in the vicinity
+- Safe and family-friendly community
+
+## Social Media
+
+- Facebook: https://www.facebook.com/srignanajyothischool/
+- Instagram: https://www.instagram.com/srignanajyothi/
+- YouTube: https://www.youtube.com/@SriGnanajyothiSchool1989
+- WhatsApp: https://wa.me/919035844103
+
+## Recent Blog Articles
+
+The school maintains a blog with articles on:
+- Best schools in Yelahanka and Bangalore
+- School admission process and documentation
+- School fees structure in Bangalore and Yelahanka
+- KSEEB vs CBSE curriculum comparison
+- Karnataka school holiday calendar
+- School admissions for different classes
+- RTE admissions in Karnataka
+- School transfer process
+- After-school activities and hobby classes
+- State board schools in Yelahanka
+
+## Unique Strengths
+
+1. **37+ Years of Legacy:** Proven track record of educational excellence
+2. **5000+ Alumni:** Successful graduates working across diverse sectors
+3. **50+ Expert Teachers:** Qualified and experienced teaching staff
+4. **200+ Awards:** Recognition in academics, sports, and cultural events
+5. **Affordable Fees:** Quality education at reasonable cost
+6. **Holistic Development:** Balance of academics, sports, arts, and values
+7. **Small Batches:** Adequate student-teacher ratio for personalized attention
+8. **Parental Involvement:** Regular communication with parents
+
+## Core Values
+
+- **Excellence:** Pursuing highest standards in all activities
+- **Integrity:** Honesty and ethical conduct
+- **Innovation:** Fostering creative thinking
+- **Compassion:** Empathy and kindness in community
+- **Discipline:** Self-responsibility and time management
+- **Community:** Strength in togetherness
+
+## Contact for More Information
+
+**Call:** +91 90358 44103
+**Email:** sgjeschool@gmail.com
+**Visit:** Gnanada Gudi, Yelahanka Agrahara Badavane, Bengaluru – 560064
+**Website:** https://gnanajyothi.in/
+
+---
+
+*Last Updated: March 2026*
+*This file provides school information to AI-powered search engines and language models.*
