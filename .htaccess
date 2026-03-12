@@ -11,11 +11,21 @@
     Header unset X-Powered-By
 </IfModule>
 
-# Redirect HTTP to HTTPS
+# Redirect HTTP to HTTPS & Rewrite .html files
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Remove trailing slash from URLs and rewrite to .html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+    # Rewrite directory-like requests to .html files
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
 </IfModule>
 
 # Cache Control for static assets (Header set overrides server defaults)
