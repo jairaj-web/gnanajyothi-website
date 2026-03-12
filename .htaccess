@@ -1,6 +1,11 @@
 # Sri Gnanajyothi School — .htaccess
 
-# Serve index.html as the default homepage
+# Force serve index.html at root, bypass WordPress
+<IfModule mod_rewrite.c>
+    RewriteRule ^$ index.html [L]
+</IfModule>
+
+# Serve index.html as default homepage
 DirectoryIndex index.html index.php
 
 # Security Headers
@@ -14,20 +19,12 @@ DirectoryIndex index.html index.php
     Header unset X-Powered-By
 </IfModule>
 
-# Redirect HTTP to HTTPS & Rewrite .html files
+# Rewrite URLs to .html files
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # Redirect /index.html to homepage
-    RewriteRule ^index\.html$ / [R=301,L]
-
-    # Remove trailing slash and add .html extension
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} !^/wp-
-    RewriteRule ^(.+?)/?$ /$1.html [L]
+    RewriteRule ^(.+?)/?$ $1.html [L]
 </IfModule>
 
 # Cache Control for static assets (Header set overrides server defaults)
