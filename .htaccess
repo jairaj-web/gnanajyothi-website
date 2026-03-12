@@ -20,11 +20,13 @@ DirectoryIndex index.html index.php
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+    # Redirect /index.html to homepage
+    RewriteRule ^index\.html$ / [R=301,L]
+
     # Remove trailing slash and add .html extension
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !^/wp-
-    RewriteCond %{REQUEST_URI} !^/index\.html
     RewriteRule ^(.+?)/?$ /$1.html [L]
 </IfModule>
 
