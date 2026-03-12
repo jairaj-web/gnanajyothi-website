@@ -1,13 +1,5 @@
 # Sri Gnanajyothi School — .htaccess
 
-# CRITICAL: Disable all PHP execution in this directory
-<FilesMatch "\.php$">
-    Order Allow,Deny
-    Deny from all
-</FilesMatch>
-
-php_flag engine off
-
 # Security Headers
 <IfModule mod_headers.c>
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
@@ -19,20 +11,21 @@ php_flag engine off
     Header unset X-Powered-By
 </IfModule>
 
-# Redirect HTTP to HTTPS & Serve static HTML directly
+# Redirect HTTP to HTTPS & Rewrite .html files
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Serve .html files directly (highest priority)
-    RewriteCond %{REQUEST_FILENAME}.html -f
-    RewriteRule ^(.+?)/?$ $1.html [L]
-
-    # Remove trailing slash from URLs
+    # Remove trailing slash from URLs and rewrite to .html
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+    # Rewrite directory-like requests to .html files
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
 </IfModule>
 
 # Cache Control for static assets (Header set overrides server defaults)
