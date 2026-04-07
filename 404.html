@@ -6,6 +6,7 @@
     <title>Page Not Found | Sri Gnanajyothi School</title>
     <meta name="robots" content="noindex, follow">
     <link rel="icon" type="image/webp" href="logo.webp">
+    <link rel="apple-touch-icon" href="logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -15,38 +16,193 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="style.css?v=10">
     <style>
-        .error-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #F0F9F1 0%, #E8F5E9 100%); padding: 2rem; }
-        .error-box { text-align: center; max-width: 560px; }
-        .error-code { font-size: clamp(6rem,18vw,10rem); font-weight: 800; color: var(--primary); line-height: 1; opacity: 0.15; font-family: 'Fredoka', sans-serif; }
-        .error-icon { font-size: 5rem; margin: -1rem 0 1rem; }
-        .error-box h1 { font-size: 1.8rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .error-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #F0F9F1 0%, #E8F5E9 100%);
+            padding: 4rem 1rem;
+        }
+        .error-box { text-align: center; max-width: 560px; width: 100%; }
+        .error-code {
+            font-size: clamp(6rem, 18vw, 10rem);
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            opacity: 0.12;
+            font-family: 'Fredoka', sans-serif;
+        }
+        .error-icon { font-size: 4.5rem; margin: -1.5rem 0 1rem; }
+        .error-box h1 { font-size: clamp(1.5rem, 4vw, 2rem); color: var(--primary); margin-bottom: 0.75rem; }
         .error-box p { color: var(--text-light); font-size: 1rem; line-height: 1.7; margin-bottom: 2rem; }
         .error-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .error-nav {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(27,94,32,0.15);
+        }
+        .error-nav p { font-size: 0.85rem; margin-bottom: 1rem; }
+        .error-nav-links {
+            display: flex;
+            gap: 0.6rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 0.88rem;
+        }
+        .error-nav-links a { color: var(--primary); font-weight: 700; }
     </style>
 </head>
 <body>
-<div class="error-page">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Announcement Bar -->
+<div class="announce-bar">
+    🎓 Admissions Open for 2026-27 <span>★</span> Welcome to Gnanajyothi School <span>★</span> Excellence in Education Since 1989 🌟
+</div>
+
+<!-- Header -->
+<header role="banner">
+    <div class="header-container">
+        <a href="index.html" class="logo" aria-label="Gnanajyothi School Home">
+            <img src="logo.webp" alt="Gnanajyothi School Logo" width="52" height="52">
+            <div class="logo-text">
+                <span class="logo-name">Sri Gnanajyothi School</span>
+                <p>✦ Excellence Since 1989 ✦</p>
+            </div>
+        </a>
+        <nav class="desktop-nav" role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="facilities.html"><i class="fas fa-building"></i> Facilities</a></li>
+                <li><a href="programs.html"><i class="fas fa-graduation-cap"></i> Programs</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="fees.html"><i class="fas fa-rupee-sign"></i> Fees</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="blog.html"><i class="fas fa-pencil-alt"></i> Blog</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <div class="mobile-nav-header">
+        <img src="logo.webp" alt="Logo" width="45" height="45">
+        <span>Sri Gnanajyothi School</span>
+    </div>
+    <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="facilities.html"><i class="fas fa-building"></i> Facilities</a></li>
+        <li><a href="programs.html"><i class="fas fa-graduation-cap"></i> Programs</a></li>
+        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+        <li><a href="fees.html"><i class="fas fa-rupee-sign"></i> Fees</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="blog.html"><i class="fas fa-pencil-alt"></i> Blog</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+<section class="error-section">
     <div class="error-box">
         <div class="error-code">404</div>
         <div class="error-icon">🔍</div>
         <h1>Page Not Found</h1>
-        <p>Oops! The page you're looking for doesn't exist or may have been moved. Don't worry — use the links below to find what you need.</p>
+        <p>Oops! The page you're looking for doesn't exist or may have been moved.<br>Don't worry — use the links below to find what you need.</p>
         <div class="error-links">
             <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> Go Home</a>
             <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
             <a href="tel:+919035844103" class="btn" style="background:#fff;color:var(--primary);border:2px solid var(--primary);"><i class="fas fa-phone-alt"></i> Call Us</a>
         </div>
-        <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(27,94,32,0.15);">
-            <p style="font-size:0.85rem;margin-bottom:1rem;"><strong>Quick navigation:</strong></p>
-            <div style="display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap;font-size:0.88rem;">
-                <a href="about.html" style="color:var(--primary);font-weight:700;">About</a> ·
-                <a href="facilities.html" style="color:var(--primary);font-weight:700;">Facilities</a> ·
-                <a href="programs.html" style="color:var(--primary);font-weight:700;">Programs</a> ·
-                <a href="gallery.html" style="color:var(--primary);font-weight:700;">Gallery</a> ·
-                <a href="fees.html" style="color:var(--primary);font-weight:700;">Fee Structure</a>
+        <div class="error-nav">
+            <p><strong>Quick navigation:</strong></p>
+            <div class="error-nav-links">
+                <a href="about.html">About</a> ·
+                <a href="facilities.html">Facilities</a> ·
+                <a href="programs.html">Programs</a> ·
+                <a href="gallery.html">Gallery</a> ·
+                <a href="fees.html">Fee Structure</a> ·
+                <a href="blog.html">Blog</a>
             </div>
         </div>
     </div>
-</div>
+</section>
+</main>
+
+<footer role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="f-logo">
+                    <img src="logo.webp" alt="Logo" width="48" height="48">
+                    <div class="f-logo-text">
+                        <h3>Sri Gnanajyothi School</h3>
+                        <span>✦ Excellence Since 1989 ✦</span>
+                    </div>
+                </div>
+                <p>Nurturing young minds with quality education, strong values, and all-round development for over 37 years in Yelahanka, Bangalore.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/srignanajyothischool/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/srignanajyothi/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@SriGnanajyothiSchool1989" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/919035844103" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    <li><a href="fees.html"><i class="fas fa-chevron-right"></i> Fee Structure</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Pre-Primary (LKG &amp; UKG)</a></li>
+                    <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Primary (I–V)</a></li>
+                    <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Middle (VI–VIII)</a></li>
+                    <li><a href="programs.html"><i class="fas fa-chevron-right"></i> Secondary (IX–X)</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt" style="color:#4CAF50;margin-right:0.5rem"></i> Gnanada Gudi, Gnanarathna Dr. D. A. Gowda Sir School Road, Yelahanka Agrahara Badavane, Bengaluru, Karnataka – 560064</p>
+                <p style="margin-top:0.6rem"><a href="tel:+919035844103" style="color:rgba(255,255,255,0.6)"><i class="fas fa-phone" style="color:#4CAF50"></i>+91 90358 44103</a></p>
+                <p style="margin-top:0.6rem"><a href="mailto:sgjeschool@gmail.com" style="color:rgba(255,255,255,0.6)"><i class="fas fa-envelope" style="color:#4CAF50"></i>sgjeschool@gmail.com</a></p>
+                <p style="margin-top:0.6rem"><i class="fas fa-clock" style="color:#4CAF50;margin-right:0.5rem"></i> Mon–Fri: 9:00AM–4:00PM | Sat: 9:00AM–1:00PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Sri Gnanajyothi School. All rights reserved.</p>
+            <p>Designed by <a href="https://printigly.in" target="_blank" rel="noopener">Printigly</a></p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/919035844103?text=Hello%20Gnanajyothi%20School%2C%20I%20would%20like%20to%20know%20more%20about%20admissions." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileNav = document.getElementById('mobileNav');
+const mobileOverlay = document.getElementById('mobileOverlay');
+function openMenu(){mobileNav.classList.add('active');mobileOverlay.classList.add('active');menuToggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+function closeMenu(){mobileNav.classList.remove('active');mobileOverlay.classList.remove('active');menuToggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+menuToggle.addEventListener('click',()=>mobileNav.classList.contains('active')?closeMenu():openMenu());
+mobileOverlay.addEventListener('click',closeMenu);
+</script>
 </body>
 </html>
